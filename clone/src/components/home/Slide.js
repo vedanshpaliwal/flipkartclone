@@ -150,8 +150,7 @@ export default function Slide({ timer, title, products }) {
                 </Box>
                 <Divider />
                 <Carousel responsive={responsive} infinite={true} draggable={false} centerMode={true} swipeable={false} autoPlay={true} autoPlaySpeed={10000} keyBoardControl={true} showDots={false}
-                    removeArrowOnDeviceType={"tablet", "mobile"}
-                >
+                    removeArrowOnDeviceType={"tablet", "mobile"}  >
                     {
                         products.map(products => (
                             <Link to={`product/${products.id}`} className={classes.link}>

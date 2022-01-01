@@ -4,8 +4,7 @@ import * as actiontypes from './cartconstants';
 export const addTocart = (id) => async(dispatch)=>{
   try{
     console.log(id)
-      // const { data } = await axios.get(`http://localhost:8000/product/${id}`)
-      const { data } = await axios.get(`/product/${id}`)
+      const { data } = await axios.get(`http://localhost:8000/product/${id}`)
 
       // const { data } = await axios.get(`http://localhost:8000/product/product5`)
 

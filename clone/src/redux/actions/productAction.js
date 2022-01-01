@@ -3,8 +3,7 @@ import axios from 'axios';
 
 export const getProducts = () => async (dispatch) => {
     try {
-        // const { data } = await axios.get(`http://localhost:8000/products`);
-        const { data } = await axios.get(`/products`);
+        const { data } = await axios.get(`http://localhost:8000/products`);
 
         dispatch({ type: actionTypes.GET_PRODUCTS_SUCCESS, payload: data });
     } catch (error) {
@@ -19,8 +18,7 @@ export const getProductDetails = (id) => async(dispatch) => {
     try {
         
         
-        // const { data } = await axios.get(`http://localhost:8000/product/${id.id}`)
-        const { data } = await axios.get(`/product/${id.id}`)
+        const { data } = await axios.get(`http://localhost:8000/product/${id.id}`)
 
         
         // const {data} = await axios.get(`http://localhost:8000/product/product5`);
