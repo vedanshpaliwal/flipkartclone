@@ -38,7 +38,7 @@ router.get('/product/:id',async(req,res)=>{
          const productItem = await products.findOne({'id' : req.params.id})
          res.json(productItem)
         }catch(error){
-        // console.log(error)
+        console.log(error)
     }
 })
 router.post('/payment',async(req,res)=>{
